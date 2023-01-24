@@ -1,0 +1,75 @@
+.introducao{
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+
+.conteudo {
+  font-family: Epilogue;
+}
+.conteudo h1{
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 48px;
+}
+.conteudo p{
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 25px;
+  margin-bottom: 48px;
+}
+
+.conteudo a{
+  padding: 10px 20px;
+  background-color: #000;
+  border:2px solid;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 64px;
+  transition: 0.3s;
+}
+.conteudo a:hover{
+  color: #000;
+  border-color: #000;
+  background: transparent;
+  transition: 0.3s ;
+  text-decoration: underline;
+}
+
+.patrocinadores{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+@media (max-width: 1000px) {
+.introducao{
+  flex-direction: column-reverse;
+  gap: 32px;
+}
+.conteudo{display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+.conteudo h1{
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 32px;
+}
+.conteudo p {
+  text-align: center;
+}
+/* .conteudo a:hover{
+ color: #ffffff;
+ background: #000;
+ text-decoration: none;
+border: none;
+} */
+}
+
